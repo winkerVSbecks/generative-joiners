@@ -4,3 +4,5 @@ Based on [Manoela Ilic's](https://twitter.com/crnacura) [Motion Trail Animations
 
 - `npm install`
 - `npm run dev`
+
+![](public/demo.gif)
