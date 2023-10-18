@@ -1,0 +1,22 @@
+{
+  "name": "generative-motion-trails",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "canvas-sketch": "^0.7.7",
+    "canvas-sketch-util": "^1.10.0",
+    "eases": "^1.0.8",
+    "fettepalette": "^3.1.1",
+    "gsap": "^3.12.2"
+  }
+}
