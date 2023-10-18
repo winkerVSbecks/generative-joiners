@@ -4,15 +4,17 @@ import canvasSketch from 'canvas-sketch';
 import sketch from './sketches/zhi';
 // import sketch from './sketches/animated-grid';
 
-const placeholder = document.createElement('canvas');
+const imageCount = 10;
+
+const canvasEl = document.createElement('canvas');
 
 const settings = {
   duration: 1,
   dimensions: [640, 640],
   playbackRate: 'throttle',
   animate: true,
-  fps: 11,
-  canvas: placeholder,
+  fps: imageCount + 1,
+  canvas: canvasEl,
   context: '2d',
   scaleToFit: false,
   scaleToView: false,
@@ -32,7 +34,7 @@ let frame = 0;
 export function generateImages() {
   canvasSketch(
     sketch(() => {
-      const dataURI = placeholder.toDataURL();
+      const dataURI = canvasEl.toDataURL();
       if (imgEls[frame]) {
         imgEls[frame].style.backgroundImage = `url('${dataURI} ')`;
       }
